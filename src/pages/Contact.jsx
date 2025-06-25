@@ -30,7 +30,7 @@ export function Contact() {
               </div>
               <div className="flex items-center mb-4">
                 <FaPhone className="text-blue-500 mr-2" />
-                <p>Tel: +1 575 755 968 </p>
+                <p>Tel: +1 xxx xxx xxx </p>
               </div>
               <div className="flex items-center ">
                 <FaMapMarkedAlt className="text-blue-500 mr-2" />
