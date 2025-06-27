@@ -1,6 +1,10 @@
 import { CityList } from "../components/CityList";
+import { useNavigate } from "react-router";
 
 export function Home() {
+
+const navigate = useNavigate();
+
   return (
     <>
       <div
@@ -18,7 +22,8 @@ export function Home() {
             Discover amazing travel stories and tips
           </p>
 
-          <button className="border text-white px-6 py-2 rounded-full text-lg md:text-xl hover:bg-orange-500 transform transition duration-300 hover:scale-105">
+          <button onClick={() => navigate("/CityList")}
+          className="border text-white px-6 py-2 rounded-full text-lg md:text-xl hover:bg-orange-500 transform transition duration-300 hover:scale-105">
             Get Started
           </button>
         </div>

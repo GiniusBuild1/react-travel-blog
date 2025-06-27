@@ -12,7 +12,7 @@ export function CityDetail() {
       {/* LEFT SIDE: City details */}
       <div className="w-full md:w-2/3 lg:w-3/5 pr-6">
         <Link
-          to="/"
+          to="/citylist"
           className="text-blue-600 hover:underline mb-4 inline-block"
         >
            Back to Home Page
@@ -53,8 +53,10 @@ export function CityDetail() {
       </div>
 
       {/* RIGHT SIDE: Collapsible Map */}
+
+      
       {showMap && (
-        <div className="relative hidden md:block md:w-1/3 lg:w-2/5 bg-white p-4 shadow-inner rounded-lg">
+        <div className="relative mt-6 hidden md:block md:w-1/3 lg:w-2/5 bg-white p-4 shadow-inner rounded-lg">
           {/* Close Button */}
           <button
             onClick={() => setShowMap(false)}
@@ -64,8 +66,10 @@ export function CityDetail() {
             ×
           </button>
 
-          <div className="relative w-full h-[400px] rounded overflow-hidden shadow">
+          <div className="relative h-[250px] sm:h-[300px] md:h-[400px] object-cover rounded overflow-hidden shadow">
+            
             {city.googleMapLink ? (
+              
               <iframe
                 src={city.googleMapLink}
                 width="100%"
@@ -77,7 +81,7 @@ export function CityDetail() {
               ></iframe>
             ) : (
               <div className="w-full h-full flex items-center justify-center text-gray-400">
-                No map available
+              <h5>The map of </h5>
               </div>
             )}
           </div>
@@ -86,3 +90,4 @@ export function CityDetail() {
     </div>
   );
 }
+

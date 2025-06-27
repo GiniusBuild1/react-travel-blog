@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-export function NewPostForm() {
+export function NewPostForm({ cities, setCities }) {
+
+  
   const [formData, setFormData] = useState({
     title: "",
     location: "",
@@ -20,10 +22,12 @@ export function NewPostForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("New Post Submitted:", formData);
-    alert(
-      "Post submitted"
-    );
+    const newCity = {
+      ...formData,
+      id: Date.now(), // Simple unique ID
+    };
+    setCities([...cities, newCity]);
+    alert("Post submitted");
   };
 
   return (
@@ -76,6 +80,8 @@ export function NewPostForm() {
           className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
         >
           Submit Post
+
+          
         </button>
       </form>
     </div>

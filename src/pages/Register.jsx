@@ -52,8 +52,8 @@ export function Register() {
             <p className="text-left text-sm text-gray-600">
               Already Registed?
               <Link to="/loginpage" className="text-blue-600 hover:underline">
-                {" "}
-                Log in{" "}
+               
+                Log in
               </Link>
             </p>
           </div>

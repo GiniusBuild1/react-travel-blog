@@ -3,10 +3,10 @@ import cities from "../cities";
 
 export function CityList() {
   return (
-    <div className="min-h-screen flex mt-10">
+    <div className="min-h-screen flex mt-10 bg-gray-800">
       {/* LEFT SIDE: Cards (2/3 width) */}
       <div className="w-full md:w-2/3 lg:w-3/5 p-6 overflow-y-auto">
-        <h1 className="text-6xl text-center font-bold mb-6">VISITED CITIES</h1>
+        <h1 className="text-6xl text-center text-white font-bold mb-6 mt-6">VISITED CITIES</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {cities.map((city) => (
             <div
@@ -36,9 +36,11 @@ export function CityList() {
       </div>
 
       {/* RIGHT SIDE: Empty placeholder (1/3 width) */}
-      <div className="hidden md:block md:w-1/3 lg:w-2/5 bg-gray-100 p-6">
+      <div className="hidden md:block md:w-1/3 lg:w-2/5 bg-gray-100 p-6 mt-5 mb-30">
         <div className="h-full w-full flex items-center justify-center text-gray-400">
-          <p>Map or Image Preview</p>
+          
+            <img src="https://png.pngtree.com/background/20210711/original/pngtree-travel-around-the-world-illustration-poster-background-picture-image_1098929.jpg" alt="" />
+          
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ export function LogInPage() {
           <div>
             <img
               src="https://img.freepik.com/free-vector/login-concept-illustration_114360-739.jpg"
-              alt=""
+              alt="log in pic"
             />
           </div>
 

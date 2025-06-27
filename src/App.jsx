@@ -24,7 +24,7 @@ export function App() {
         <Route path="/newpostform" element={<NewPostForm />}></Route>
         <Route path={"/logInPage"} element={<LogInPage />} />
         <Route path={"/register"} element={<Register />} />
-        <Route path="/" element={<CityList />} />
+        <Route path={"/citylist"} element={<CityList />} />
         <Route path="/city/:id" element={<CityDetail />} />
       </Routes>
       <Footer />
